@@ -1,5 +1,6 @@
 # Pre-requisites for this tutorial
-Two Github accounts should be created before you begin this tutorial. More about how these two accounts will be used will come later in the tutorial.
+* Two Github accounts should be created before you begin this tutorial. More about how these two accounts will be used will come later in the tutorial.
+* Some knowledge about Docker is recommended but not required. In this tutorial, we will use Docker to install Jenkins. The commands executed will be briefly clarified as necessary, since this tutorial is not about how to use Docker.
 
 # Introduction to DevOps
 DevOps is a set of practices whose purpose is to have less segregation between the development and operation parts in software development life cycle. In general, these principles are about facilitating continuous integration and continuous delivery/deployment (CI/CD) using automation tools. A popular CI/CD tool is Jenkins, which is the topic of this tutorial.
