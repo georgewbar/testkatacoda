@@ -25,4 +25,6 @@ As seen in the description above, if any the stage fail, all the following stage
 
 Moreover, in this tutorial, we will configure Github webhooks to trigger the pipeline when new commits are pushed to any branch in the repo, and we will configure Jenkins to send a commit status as a response to Github to make Github accept merging the code after reviewing.
 
+Render port 80: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+
 Now, Let's begin the tutorial.
