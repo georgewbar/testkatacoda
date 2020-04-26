@@ -25,7 +25,7 @@ Normally, you would want to expose port 8080 in your firewall by executing `sudo
 
 # Change default password
 
-Now, if you refresh the dashboard, you will see that Jenkins will show up (although it could take some time). Jenkins will tell you that you could find the default password in path `/var/lib/jenkins/secrets/initialAdminPassword`.
+Now, if you refresh the dashboard, you will see that Jenkins will show up (although it could take some time until it starts; you should wait until Jenkins starts before proceeding). Jenkins will tell you that you could find the default password in path `/var/lib/jenkins/secrets/initialAdminPassword`.
 
 To get this password, execute `cat /var/lib/jenkins/secrets/initialAdminPassword`{{execute}}, which will print the default password on the terminal. Copy this password by marking it and right clicking, and clicking on Copy. Then, paste this password in the Jenkins.
 
