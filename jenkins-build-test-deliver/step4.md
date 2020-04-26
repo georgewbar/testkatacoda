@@ -20,7 +20,7 @@ Do the following steps:
 1. A new form will appear. Fill in the `Display Name` in the top to be `Sample Maven Pipeline`.  
 ![](./assets/display_name.png)
 
-1. Then, go to `Branch Sources`, and click on `Add source`.
+1. Then, go to `Branch Sources`, and click on `Add source`.  
 ![](./assets/branch_source.png)
 
 1. Then, add a new `Credential` by clicking `Add` and choose `sample-project-pipeline`.  
