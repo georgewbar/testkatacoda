@@ -123,7 +123,7 @@ Do the following steps:
 ![](./assets/branches.png)
 
 1. Now you will see branch master builds, which only includes one build only `#1`. You can also see `Last successful artifacts` which has `tutorial-1.0-SNAPSHOT.jar` element underneath. You can click to download this JAR file if you want. It also shows `Latest Test Result (no failures)`. You can click on any of elements shown to show more details. For now, click on `#1` element.
-![](./assets/pipeline_form.png)
+![](./assets/pipeline_form_1.png)
 
 1. Now you will see a new page that has more details about build `#1` specifically. You will see the archived `Build artifacts` (and the `tutorial-1.0-SNAPSHOT.jar` file artifact underneath it) that are specific to build `#1`, and `Test Result` (which shows `no failures`) that are also specific to build `#1`. You will also see `Console Output` on the left which will show you the detailed log output of build `#1`. You will also see the branch of this build, which is `master` branch in this case. You could click on any of these elements to see more details.  
 ![](./assets/build_1.png)
