@@ -6,4 +6,4 @@ Now, do the following steps (and the screenshots) to create a new organization:
 
 1. Sign in to your `<GITHUB_ADMIN_USER>` account.
 2. Click on your profile icon in the upper right part of your screen.  
-![](imgs/settings.JPG =100x)
+![](imgs/settings.JPG)
