@@ -122,8 +122,14 @@ Do the following steps:
 1. Now you will the different branches in the Github repo fork, which only includes `master` for now. Click on `master` branch.
 ![](./assets/branches.png)
 
-1. Now you will see branch master builds, which only includes one build only `#1`. You can also see `Last successful artifacts` which has `tutorial-1.0-SNAPSHOT.jar` element underneath. You can click to download this JAR file if you want. It also shows `Latest Test Result (no failures)`. You can click on any of elements shown to show more details. For now, click on `#1` element.
+1. Now you will see branch master builds, which only includes one build only `#1`. You can also see `Last successful artifacts` which has `tutorial-1.0-SNAPSHOT.jar` element underneath. You can click to download this JAR file if you want. It also shows `Latest Test Result (no failures)`. You will also see that the build was successful by seeing that all the stages are green and that there is a ball sphere on the left of `#1` (under `Build History`). You can click on any of elements shown to show more details. For now, click on `#1` element.
 ![](./assets/pipeline_form_1.png)
 
-1. Now you will see a new page that has more details about build `#1` specifically. You will see the archived `Build artifacts` (and the `tutorial-1.0-SNAPSHOT.jar` file artifact underneath it) that are specific to build `#1`, and `Test Result` (which shows `no failures`) that are also specific to build `#1`. You will also see `Console Output` on the left which will show you the detailed log output of build `#1`. You will also see the branch of this build, which is `master` branch in this case. You could click on any of these elements to see more details.  
+1. Now you will see a new page that has more details about build `#1` specifically. You will see that build `#1` was successful by see the blue sphere in the top of the page. You will also see the archived `Build artifacts` (and the `tutorial-1.0-SNAPSHOT.jar` file artifact underneath it) that are specific to build `#1`, and `Test Result` (which shows `no failures`) that are also specific to build `#1`. You will also see `Console Output` on the left which will show you the detailed log output of build `#1`. You will also see the branch of this build, which is `master` branch in this case. You could click on any of these elements to see more details.  
 ![](./assets/build_no1.png)
+
+1. Now go to your repo fork `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}}. Click on `commits`.  
+![](./assets/commits.png)
+
+1. Now look at the latest commit (i.e. the commit at the top). You will see a green tick which means that Jenkins was successful at building the pipeline from this last commit. You can click on the green tick, and you will see more details about the commit status.
+![](./assets/commit_status.png)
