@@ -29,4 +29,4 @@ As seen in the description above, if any the stage fail, all the following stage
 
 Moreover, in this tutorial, we will configure Github webhooks to trigger the pipeline when new commits are pushed to any branch in the repo, and we will configure Jenkins to send a commit status as a response to Github to make Github accept merging the code after reviewing.
 
-Now, Let's begin the tutorial.
+Now, Let's begin the tutorial. Please, note that most images are small enough to fit in Katacoda. However, there are some images that are not. If there is any image that is not clear, click on it to make it larger.

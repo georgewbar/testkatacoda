@@ -3,7 +3,7 @@ Now, we will use one of the two Github accounts that you have. This account will
 
 We will need an organization to be able to control the access writes to different users in a more flexible manners.
 
-# Create Github Organization
+## Create Github Organization
 Now, do the following steps (and the screenshots) to create a new organization:
 
 1. Sign in to your `<GITHUB_ADMIN_USER>` account.
@@ -32,7 +32,7 @@ Now, do the following steps (and the screenshots) to create a new organization:
 1. Click on `Skip this step` to skip adding collaborators for now until we have setup the organization and repo appropriately.
 ![](./assets/skip_step.png)
 
-# Fork the Github repo
+## Fork the Github repo
 1. Now, go to this Github repo [https://github.com/georgewbar/sample-project-repo](https://github.com/georgewbar/sample-project-repo) and click on `Fork` on the top right.
 ![](./assets/fork.png)
 

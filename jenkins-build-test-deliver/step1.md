@@ -15,7 +15,7 @@ address to the system.
 
 6. Then, execute `sudo usermod -a -G docker jenkins`{{execute}}. This will add the user `jenkins` to `docker` group. This is needed to give Jenkins the ability to start new containers, which we will need.
 
-7. Then, restart Jenkins by executing `sudo systemctl start jenkins` for that change to take effect.
+7. Then, restart Jenkins by executing `sudo systemctl restart jenkins`{{execute}} for that change to take effect. And, run `sudo systemctl status jenkins`{{execute}} to make sure that Jenkins is running.
 
 By default, Jenkins listens on port 8080, which is exposed in your Dashboard on your right, or via   
 https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/.  

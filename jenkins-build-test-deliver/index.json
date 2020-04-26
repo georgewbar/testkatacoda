@@ -2,7 +2,7 @@
   "title": "Jenkins Tutorial - Multibranch Pipeline",
   "description": "This tutorial goes through how to use Jenkins Multibranch Pipeline plugin.",
   "difficulty": "Beginner",
-  "time": "30 minutes",
+  "time": "60 minutes",
   "details": {
     "steps": [
       {
