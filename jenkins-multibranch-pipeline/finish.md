@@ -13,8 +13,8 @@ Did you know that
 
 ## References
 
-[1] https://en.wikipedia.org/wiki/Jenkins_(software)  
-[2] https://en.wikipedia.org/wiki/Kohsuke_Kawaguchi)  
-[3] https://en.wikipedia.org/wiki/Jenkins_(name)  
+[1] https://en.wikipedia.org/wiki/Jenkins_\(software\)  
+[2] https://en.wikipedia.org/wiki/Kohsuke_Kawaguchi  
+[3] https://en.wikipedia.org/wiki/Jenkins_\(name\)  
 [4] https://nameberry.com/babyname/Hudson/boy  
 [5] https://wiki.jenkins.io/pages/viewpage.action?pageId=58001258  
