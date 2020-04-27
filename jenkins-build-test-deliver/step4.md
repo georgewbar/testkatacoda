@@ -8,7 +8,10 @@ Do the following steps:
 
 1. Go to this URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/, and log in (if you are not already logged in) using the `<USERNAME>` created in `Step 1` in this tutorial.
 
-1. When you have logged in, click on `New Item` on the left part of the screen.  
+1. When you have logged in, go to Jenkins home page by clicking on Jenkins logo on the top left.  
+![](./assets/jenkins_home.png)
+
+1. Then, click on `New Item` on the left part of the screen.  
 ![](./assets/new_item.png)
 
 1. A new form will appear. Type in the item name (call it `<ITEM NAME>`). I will choose `<ITEM NAME>`=`sample-project-pipeline`.  
