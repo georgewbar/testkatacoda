@@ -1,4 +1,4 @@
-# Clone the repo fork, introduce an error and push
+# Clone the repo fork, introduce an error, push and create a pull request
 
 ## Clone repo fork
 Now, we are going to clone you organization's repo fork, introduce an error and push it to Github on a new branch that we will call `issue/1` using `<GITHUB_WRITE_USER>` account (note that: we are going to use `<GITHUB_WRITE_USER>` and not `<GITHUB_ADMIN_USER>`) to demonstrate that Github is able to notify Jenkins server on https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/ with the changes made to the Github repo.
@@ -11,6 +11,8 @@ Do the following steps:
 
 1. Then, in a new browser tab, go to the URL of the repo fork `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}} (and sign in as `<GITHUB_ADMIN_USER>` if you are not already), where `<ORGANIZATION ACCOUNT NAME>` is your organization account name. In my case, the URL is `https://github.com/devops-pipeline-tutorial/sample-project-repo`. Then, click `Clone or download`. Then, click `Use HTTPS` if `Clone with HTTPS` is not seen. Then, click on the `Copy to clipboard` sign to copy the `repo URL`.  
 ![](./assets/clone_form.png)
+
+1. Now, go to the terminal in the Katacoda tutorial, and execute `git config --global user.email "<GITHUB_WRITE_USER email>"`{{copy}}, where `<GITHUB_WRITE_USER email>` should be replaced by the email associated with `<GITHUB_WRITE_USER>` account. For example, if `<GITHUB_WRITE_USER email>`=`abc@examplesite.com`, then the command shoudl be `git config --global user.email "abc@examplesite.com"`.
 
 1. Now, go to the terminal in the Katacoda tutorial, and execute `git clone <repo URL>`, where URL is the URL copied in previous step. In my case, I will execute `git clone https://github.com/devops-pipeline-tutorial/sample-project-repo.git`. Note that thr URL that you will use in the `git clone` command is different from the one I am using here. The command that you will execute will be of the form `git clone https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo.git`{{copy}}, where `<ORGANIZATION ACCOUNT NAME>` is your organization's account name.
 
@@ -76,7 +78,7 @@ public class AppTest
 
 What we want to do now is to demonstrate that if any of the unit tests fail, then Jenkins pipeline will detect that and will send a `failure` status to Github.
 
-## Now, we introduce a unit test error
+## Now, we introduce a unit test error and push
 
 We will demonstrate that if any of the unit tests fail, then Jenkins pipeline will detect that and will send a `failure` status to Github. We will do this by changing the `return "World";` in `App.java` file to `return "Worl";` (we will omit the letter `d` in the word `"World"` to simulate a bug in our code).
 
@@ -111,4 +113,34 @@ public class App
 
 1. If the username and password are correct, the new code will be pushed to a new branch called `issue/1` on Github. After some time, this should trigger Jenkins to checkout the code and build the pipeline.
 
-1. Now, go to the other browser `Browser_Write` to see pull request from `<GITHUB_WRITE_USER>` account perspective. Then, create a new pull request.
+1. Now, go to the Jenkins server page https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/job/sample-project-pipeline/. After some time, refresh the page. You should see that Jenkins detected a new push and a new branch `issue/1`.  
+![](./assets/branch_issue_1_jen.png)
+
+1. After some time, when Jenkins is done, refresh the page. The sphere beside `issue/1` branch should be red indicating that the pipeline failed. Now, click on `issue/1`.  
+![](./assets/fail_jenkins.png)
+
+1. Now, you will see the failing pipeline. You will see that the `Test` and `Deliver` stages failed. To see more details, click on `#1`.  
+![](./assets/fail_pipeline.png)
+
+1. Now, you will that there is one test failure and the method that failed is called `testGetWorldString`. You also see no artifacts, because the `Test` stage failed, and this made Jenkins skip the `Deliver` stage. You also the branch that this build is about, which is `issue/1` branch. To see more details about the test results, click on the link `Test Result`.
+![](./assets/fail_tests.png)
+
+1. Now, you will see more details about the tests. There is a total of 2 tests and 1 failure. You can also see the failed tests, and you could click on any of the links to see more details.  
+![](./assets/fail_tests_details.png)
+
+1. Now, go to `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo/tree/issue/1`. You will see that a `failure` status in latest commit status.  
+![](./assets/commit_status_fail.png)
+
+## Create a pull request
+1. Now, go to the other browser `Browser_Write` to see pull request from `<GITHUB_WRITE_USER>` account perspective. Then, go to `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}}. Now, we will create a pull request using `<GITHUB_WRITE_USER>` account.
+
+1. Click on `Pull requests` at the top. Then click on `New pull request`.  
+![](./assets/create_pr.png)
+
+1. Then, choose `<ORGANIZATION ACCOUNT NAME>/sample-project-repo` as your base repo. In my case here, I chose `devops-pipeline-tutorial/sample-project-repo` as my base repo. Then, click on `Create pull request` button.
+![](./assets/cr_pr_2.png)
+
+1. After some time, you should see something similar to this.  
+![](./assets/block_merge.png)
+
+We will need to fix what we broke, and push the new code again, and use  `<GITHUB_ADMIN_USER>` to review the code after Jenkins has notified Github it was able to build a successful pipeline.
