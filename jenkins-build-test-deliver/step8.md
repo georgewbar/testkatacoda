@@ -41,7 +41,7 @@ public class App
 ![](./assets/success_jenkins_pipeline.png)
 
 1. Now, go to `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo/tree/issue/1`. You will see that a `success` status in latest commit status.  
-![](./assets/commit_status.png)
+![](./assets/commit_success.png)
 
 1. Now, also in the same `Browser_Admin` (i.e. using `<GITHUB_ADMIN_USER>` account), click on `Pull requests` at the top to see the pull requests list.  
 ![](./assets/click_pr.png)
@@ -58,3 +58,27 @@ public class App
 Now, `<GITHUB_ADMIN_USER>` have approved the pull request.
 
 ## Use `<GITHUB_WRITE_USER>` to merge the pull request.
+
+Do the following steps:
+
+1. Now, go to the other browser `Browser_Write` to see pull request from `<GITHUB_WRITE_USER>` account perspective. Then, go to `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}}. Now, we will merge the pull request using `<GITHUB_WRITE_USER>` account.
+
+1. Now, click on `Pull requests` at the top to see the pull requests list.  
+![](./assets/click_pr.png)
+
+1. Now, you will see the pull requests list. Click on the open pull request.  
+![](./assets/pr_list.png)
+
+1. Now, you will see that `<GITHUB_WRITE_USER>` is now able to merge the pull request. Click on `Merge pull request`.  
+![](./assets/merge_yes.png)
+
+1. Then, click on `Confirm merge`.  
+![](./assets/confirm_merge.png)
+
+1. Now, go to `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}}.
+
+1. Click on `Commits` in the top.  
+![](./assets/commits.png)
+
+1. You will see now that the latest commit in the `master` branch that starts with `Merge pull request` will trigger Jenkins to build a new pipeline for `master` branch after `issue/1` branch was merged with it. And, after Jenkins is done, the commit status of the latest commit will be `success`.  
+![](./assets/commit_status.png)
