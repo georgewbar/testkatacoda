@@ -24,7 +24,7 @@ Do the following steps:
 1. A new page will appear. Scroll down until you find a section called `Github`. Click on the blue `?` (help) icon to show more information about this section. This will show you the webhook URL of Jenkins that Github can use (marked in blue in the image). Copy the URL.  
 ![](./assets/webhook_address.png)
 
-1. Now go to your organization's repo fork `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}}, where `<ORGANIZATION ACCOUNT NAME>` is replaced by your organization's account name. In my case, this URL is `https://github.com/devops-pipeline-tutorial/sample-project-repo`. Then, click on your repo settings.  
+1. Now go to your organization's repo fork `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}} (and sign in as `<GITHUB_ADMIN_USER>` if you are not already), where `<ORGANIZATION ACCOUNT NAME>` is replaced by your organization's account name. In my case, this URL is `https://github.com/devops-pipeline-tutorial/sample-project-repo`. Then, click on your repo `Settings`.  
 ![](./assets/settings_org.png)
 
 1. Then, click on `Webhooks` on the left.  
@@ -60,7 +60,7 @@ Now, you have added a webhook.
 
 Do the following steps:
 
-1. Now go to your organization's repo fork `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}}, where `<ORGANIZATION ACCOUNT NAME>` is replaced by your organization's account name. In my case, this URL is `https://github.com/devops-pipeline-tutorial/sample-project-repo`. Then, click on your repo settings.  
+1. Now go to your organization's repo fork `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}}, where `<ORGANIZATION ACCOUNT NAME>` is replaced by your organization's account name. In my case, this URL is `https://github.com/devops-pipeline-tutorial/sample-project-repo`. Then, click on your repo `Settings`.  
 ![](./assets/settings_org.png)
 
 1. Then, click on `Branches` on the left.  

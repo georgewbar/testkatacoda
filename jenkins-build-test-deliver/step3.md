@@ -4,7 +4,7 @@ Now, we will create a `personal access token` on Github and save it, to use it l
 
 Do the following steps:
 
-1. First, sign in to your Github account if you are not already.
+1. First, sign in to your Github account using `<GITHUB_ADMIN_USER>` if you are not already.
 
 1. Then, click your profile icon in the upper right part of your screen. Then, select `Settings`.  
 ![](./assets/settings.png)

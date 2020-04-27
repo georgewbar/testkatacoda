@@ -6,7 +6,7 @@ Now, we will go back to Jenkins to configure it to have a `Multibranch Pipeline`
 
 Do the following steps:
 
-1. Go to this URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/, and log in (if you are not already logged in) using the `<USERNAME>` created in `Step 1` in this tutorial.
+1. Go to this URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/, and log in (if you are not already logged in) using the Jenkins `<USERNAME>` created in `Step 1` in this tutorial.
 
 1. When you have logged in, go to Jenkins home page by clicking on Jenkins logo on the top left.  
 ![](./assets/jenkins_home.png)
@@ -37,7 +37,7 @@ Do the following steps:
 
   ![](./assets/credentials_form.png)
 
-1. Then, in a new browser tab, go to the URL of the repo fork `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}}, where `<ORGANIZATION ACCOUNT NAME>` is your organization account name. In my case, the URL is `https://github.com/devops-pipeline-tutorial/sample-project-repo`. Then, click `Clone or download`. Then, click `Use HTTPS` if `Clone with HTTPS` is not seen. Then, click on the `Copy to clipboard` sign to copy the repo URL.  
+1. Then, in a new browser tab, go to the URL of the repo fork `https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`{{copy}} (and sign in as `<GITHUB_ADMIN_USER>` if you are not already), where `<ORGANIZATION ACCOUNT NAME>` is your organization account name. In my case, the URL is `https://github.com/devops-pipeline-tutorial/sample-project-repo`. Then, click `Clone or download`. Then, click `Use HTTPS` if `Clone with HTTPS` is not seen. Then, click on the `Copy to clipboard` sign to copy the repo URL.  
 ![](./assets/clone_form.png)
 
 1. Then, go back to Jenkins, and select the credentials that you created and paste the repo URL that you copied in the previous step, and click on validate. It should tell you `Credentials ok. Connected to https://github.com/<ORGANIZATION ACCOUNT NAME>/sample-project-repo`, where `<ORGANIZATION ACCOUNT NAME>` is your organization account name. In my case, the end result looks like this (and it should look similar in your case except with different `<GITHUB_ADMIN_USER>` and `<ORGANIZATION ACCOUNT NAME>`):
