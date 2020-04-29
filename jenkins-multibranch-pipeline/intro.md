@@ -5,7 +5,7 @@
 # Introduction to DevOps
 DevOps is a set of practices whose purpose is to have less segregation between the development and operation parts in software development life cycle. In general, these principles are about facilitating continuous integration and continuous delivery/deployment (CI/CD) using automation tools. A popular CI/CD tool is Jenkins, which is the topic of this tutorial.
 
-# Environment Information
+# Information about execution environment for this tutorial
 The instructions that will be executed this tutorial will be executed inside Ubuntu 16.04 environment on Katacoda.
 
 # Introduction to Jenkins
