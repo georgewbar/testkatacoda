@@ -2,11 +2,11 @@
 * Two Github accounts should be created before you begin this tutorial. More about how these two accounts will be used will come later in the tutorial.
 * Some knowledge about Docker is recommended but not required. In this tutorial, we will use Docker to install Jenkins. The commands executed will be briefly clarified as necessary, since this tutorial is not about how to use Docker.
 
-# Introduction to DevOps
-DevOps is a set of practices whose purpose is to have less segregation between the development and operation parts in software development life cycle. In general, these principles are about facilitating continuous integration and continuous delivery/deployment (CI/CD) using automation tools. A popular CI/CD tool is Jenkins, which is the topic of this tutorial.
-
 # Information about execution environment for this tutorial
 The instructions that will be executed this tutorial will be executed inside Ubuntu 16.04 environment on Katacoda.
+
+# Introduction to DevOps
+DevOps is a set of practices whose purpose is to have less segregation between the development and operation parts in software development life cycle. In general, these principles are about facilitating continuous integration and continuous delivery/deployment (CI/CD) using automation tools. A popular CI/CD tool is Jenkins, which is the topic of this tutorial.
 
 # Introduction to Jenkins
 Jenkins is CI/CD server that helps automate repetitive tasks in the software development and operation. Jenkins has many plug-ins that facilitate automating most tasks. Moreover, even if there is no plug-in that does what you want, you can always create your own. That is why Jenkins is very extensible and flexible.
